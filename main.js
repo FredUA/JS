@@ -32,9 +32,9 @@ function Area() {
 		},
 		set: function(value){ 
 			var res = 0;
-			for (var key in area.addFigure){
-				res = res + key;
-			}
+			area._figures.forEach(function(item, i, arr) {				
+				
+			})
 		}
 	})
 	
