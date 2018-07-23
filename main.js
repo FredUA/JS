@@ -28,14 +28,15 @@ function Area() {
 	}
 	Object.defineProperty(this, "size", {
 		get: function(){
-			return res;
+			// return res;
 		},
-		set: function(value){ 
+		set: function(){ 
 			var res = 0;
-			area._figures.forEach(function(item, i, arr) {				
-				
+			this.addFigure.forEach(function(item, i, arr) {				
+				res = res + item
 			})
 		}
 	})
 	
 }
+
